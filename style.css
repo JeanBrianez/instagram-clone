@@ -3,18 +3,19 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Segoe UI";
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size: 14px;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
-    margin: 0;
-    padding: 0;
+    background-color: #fafafa;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    gap: 15px;
 }
 
 .instagram-wrapper {
@@ -25,16 +26,33 @@ body {
     height: 100vh;
 }
 
+.credits-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     object-fit: fill;
+    height: 45rem;
 }
 
-.instagram-phone img {
-    height: 50rem;
+.phone-photo {
+    max-width: 40rem;
+    max-height: 45rem;
+}
+
+.screen {
+    position: absolute;
+    left: 30.5rem;
+    top: 3rem;
 }
 
 .instagram-continue {
@@ -42,8 +60,8 @@ body {
     align-items: center; /* horizontal */
     justify-content: space-around; /* vertical */
     flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+    width: 65%;
+    min-height: 40rem;
 }
 
 .group {
@@ -58,11 +76,12 @@ body {
 }
 
 .group:nth-child(1) {
-    min-height: 19rem;
+    min-height: 25rem;
 }
 
 .instagram-logo {
-    height: 3rem;
+    margin-top: 1rem;
+    height: 4rem;
 }
 
 .profile-photo {
@@ -74,7 +93,13 @@ body {
 }
 
 .profile-photo img {
+    margin-top: 1rem;
     height: 6rem;
+}
+
+.instagram-phone {
+    height: 50%;
+    width: fit-content;
 }
 
 .instagram-login {
@@ -86,15 +111,13 @@ body {
 
 .instagram-logout {
     color: #0095f6;
+    font-weight: 500;
     margin-top: 1rem;
-}
-
-.not-account {
-    color: rgb(160, 160, 160);
 }
 
 .link-blue {
     color: #0095f6;
+    font-weight: 500;
 }
 
 .get-the-app {
@@ -128,8 +151,54 @@ body {
     background-image: url('./img/googleplay-button.png');
 }
 
-/* media queries */
+.credits-wrapper a {
+    font-size: 12px;
+    white-space: nowrap;
+    color: #8e8e8e;
+    gap: 15px;
+}
 
+.links-top {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    width: 75%;
+    display: flex;
+    gap: 20px;
+}
+
+.links-bottom {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    gap: 18px;
+}
+
+.langedate {
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    align-content: stretch;
+    gap: 20px;
+}
+
+.lange {
+    display: flex;
+    font-size: 12px;
+    color: #8e8e8e;
+    background-color: #fafafa;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.date { 
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+
+/* media queries */
 
 @media (max-width: 1024px) {
     .instagram-wrapper {

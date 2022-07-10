@@ -9,4 +9,4 @@
 - Inclusão de links das páginas oficiais em toda interface;
 - Inclusão de carrosel na imagem do celular.
 
-Todas estas para que a página fique idêntica a oficial do Instagram (Aparência de Junho de 2022).
+Todas estas para que a página fique semelhante a oficial do Instagram (Aparência de Junho de 2022).
