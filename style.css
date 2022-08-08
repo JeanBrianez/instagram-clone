@@ -84,6 +84,38 @@ body {
     height: 4rem;
 }
 
+.user-login form{
+    display: flex;
+    width: 18rem;
+    height: 10rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+
+.user-login .input {
+    background-color: #fafafa;
+    border: none;
+    border-color: #fafafa;
+    font-size: 11px;
+    height: 2rem;
+    gap: 5rem;
+}
+
+.user-login #login-button {
+    background-color: #85bee4;
+    color: #ffffff;
+    border: none;
+    height: 2rem;
+}
+
+.user-continue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
 .profile-photo {
     display: flex;
     justify-content: center;
@@ -118,6 +150,33 @@ body {
 .link-blue {
     color: #0095f6;
     font-weight: 500;
+}
+
+.option-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 125%;
+    color: #8e8e8e;
+}
+
+.facebook-icon {
+    height: 1.2rem;
+}
+
+.facebook-login a{
+    display: flex;
+    color: #3B5998;
+    font-weight: 500;
+    font-size: 14px;
+    gap: 9px;
+}
+
+.facebook-forgot {
+    color: #3B5998;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 .get-the-app {

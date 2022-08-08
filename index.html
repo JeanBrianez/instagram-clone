@@ -19,21 +19,32 @@
         <div class="instagram-continue">
             <div class="group">
                 <img src="./img/instagram-logo.png" class="instagram-logo" alt="instagram logo">
-                <div class="profile-photo">
-                    <img src="./img/perfil-instagram.jpg" alt="foto de perfil">
+                <div class="user-login" id="user-login">
+                    <form>
+                        <input class="input" type="text" id="username" autocomplete="off" placeholder="Telefone, nome de usuário ou email">
+                        <input class="input" type="text" id="password" autocomplete="off" placeholder="Senha">
+                        <input class="button" type="button" id="login-button" value="Entrar">
+                    </form>
+                    <div class="user-continue">
+                        <div class="option-login">
+                            <HR WIDTH=30% ALIGN=LEFT>
+                                <span>OU</span>
+                            <HR WIDTH=30% ALIGN=RIGHT>
+                        </div>
+                        <div class="facebook-login">
+                            <a href="https://www.facebook.com/login.php" ><img src="./img/facebook-icon.png" class="facebook-icon">Entrar com o Facebook</a>
+                        </div>                   
+                        <a href="https://www.instagram.com/accounts/password/reset/" class="facebook-forgot">Esqueceu a senha?</a>
+                    </div> 
                 </div>
-                <a href="#" class="instagram-login">Continue como teddybear</a>
-                <a href="#" class="instagram-logout">Remover conta</a>
             </div>
-            <div class="group">
-                <p class="not-account">Não é teddybear?</p>
-                <p class="not-account">
-                    <span class="link-blue">Alternar contas</span>
-                    ou
+            <div class="group" id="user-change-box">
+                <div class="user-change"> 
+                    <span>Não tem uma conta?</span>                   
                     <a href="https://instagram.com/" class="link-blue">Cadastre-se</a>
-                </p>
+                </div>
             </div>
-            <div class="get-the-app">
+            <div class="get-the-app" id="get-app">
                 <p class="get-app">Obtenha o aplicativo</p>
                 <div class="download">
                     <a href="https://apps.apple.com/app/instagram/id389801252" class="app-download"></a>

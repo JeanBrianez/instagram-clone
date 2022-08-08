@@ -2,7 +2,8 @@
 
 # Clone Instagram
 - Neste projeto é feito um Site clone da interface de Login do Instagram com HTML e CSS com Firebox;
-- Baseado na aula da mentora [Gabriela Pinheiro](https://github.com/SpruceGabriela).
+- Baseado na aula da mentora [Gabriela Pinheiro](https://github.com/SpruceGabriela);
+- Imagens da página oficial e do [Flaticon](https://www.flaticon.com/).
 
 # Minhas Modificações:
 - Alterações em fonte, ícone e formas;
