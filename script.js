@@ -69,24 +69,24 @@ function setCustomAttributes(element, attributes) {
 }
 
 function changeContent() {
-    const userLogged1 = "<img src='./img/perfil-instagram.jpg' id='profile-photo' alt='foto de perfil'>"
+    const userLogged1 = "<div class='image-cropper' id='cropper'></div>"
     const userLogged2 = "<input class='button' type='button' id='logged-button' value='Continuar como teddybear'></input>"
-    const userLogged3 = "<div class='user-switch'><p>Não é teddybear?</p><a href='https://instagram.com/' class='link-blue'>Trocar de conta</a></div>"
+    const userLogged3 = "<div class='user-switch' id='user-switch'><span>Não é teddybear?</span> <a href='https://instagram.com/' class='link-blue'>Trocar de conta</a></div>"
 
     const userLoginAttr = {
-        style: 'display: flex; flex-direction: column; align-itens: center'
+        style: 'display: flex; flex-direction: column; align-items: center; gap: 2.5rem;'
     };
 
-    const profileImageAttr = {
-        style: 'width: 10rem; border-radius: 50%;'
-    };
+    const cropperAttr = {
+        style: 'overflow: hidden; width: 8rem; height: 8rem; background-size: cover ;border-radius: 100%; background-image: url(./img/perfil-instagram.jpg);'
+    }
 
     const loggedButtonAttr = {
-        style: 'background-color: #0095f6; color: #ffffff; border: none; height: 2rem; width: 18rem;'
+        style: 'background-color: #0095f6; font-weight: bold; color: #ffffff; border: none; height: 2rem; width: 18rem;'
     };
 
     const userSwitchAttr = {
-        style: 'align-itens: center; flex-wrap: nowrap;'
+        style: 'align-itens: center; flex-wrap: wrap;'
     }
 
     changeBox.remove();
@@ -94,9 +94,9 @@ function changeContent() {
 
     userLogin.innerHTML = userLogged1 + userLogged2 + userLogged3;
     setCustomAttributes(userLogin, userLoginAttr);
-    
-    let profileImage = document.getElementById('profile-photo');
-    setCustomAttributes(profileImage, profileImageAttr);
+
+    let imageCropper = document.getElementById('cropper');
+    setCustomAttributes(imageCropper, cropperAttr);
     
     let loggedButton = document.getElementById('logged-button');
     setCustomAttributes(loggedButton, loggedButtonAttr);
